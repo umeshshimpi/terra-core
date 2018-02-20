@@ -3,6 +3,8 @@ ChangeLog
 
 Unreleased
 -----------------
+### Added
+* Added functionality to hide placeholder
 
 1.4.0 - (February 1, 2018)
 ------------------
