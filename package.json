@@ -60,14 +60,17 @@
     "pretest": "npm run lint",
     "props-table": "lerna run props-table",
     "postinstall": "node scripts/post-install/index.js",
-    "postinstall:package": "npm run compile && npm run bootstrap",
-    "postinstall:project": "link-parent-bin && npm run compile && npm run bootstrap",
+    "postinstall:package": "npm run bootstrap && npm run compile",
+    "postinstall:project": "link-parent-bin && npm run bootstrap && npm run compile",
     "publish": "npm whoami && check-installed-dependencies && npm run compile && npm test && npm run props-table && lerna publish",
     "postpublish": "npm run dependency-markdown && git add --all && git commit -m 'Updated DEPENDENCIES.md files'",
     "start": "cd packages/terra-site && npm run start",
     "start:express": "node scripts/express/app.js",
     "test": "jest && nightwatch && wdio",
     "wdio": "wdio"
+  },
+  "dependencies": {
+    "lerna": "^2.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
