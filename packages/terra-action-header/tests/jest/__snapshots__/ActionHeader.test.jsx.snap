@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionHeader should render a default component 1`] = `
+<div
+  className="action-header"
+>
+  default
+</div>
+`;

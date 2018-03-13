@@ -5,6 +5,7 @@ import styles from './site.scss';
 
 const TestLinks = () => (
   <ul className={styles['site-nav']}>
+    <li><Link to="/tests/action-header-tests">Action Header Tests</Link></li>
     <li><Link to="/tests/alert-tests">Alert Tests</Link></li>
     <li><Link to="/tests/arrange-tests">Arrange Tests</Link></li>
     <li><Link to="/tests/avatar-tests">Avatar Tests</Link></li>

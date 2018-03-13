@@ -5,6 +5,7 @@ import App from './App';
 import Home from './Home';
 
 // Examples
+import ActionHeaderExamples from './examples/action-header/Index';
 import AlertExamples from './examples/alert/Index';
 import ArrangeExamples from './examples/arrange/Index';
 import AvatarExamples from './examples/avatar/Index';
@@ -62,6 +63,7 @@ import ToggleButtonExamples from './examples/toggle-button/Index';
 
 // Test Routes
 /* eslint-disable import/first, import/no-extraneous-dependencies */
+import ActionHeaderTestRoutes from 'terra-action-header/tests/nightwatch/ActionHeaderTestRoutes';
 import AlertTestRoutes from 'terra-alert/tests/nightwatch/AlertTestRoutes';
 import ArrangeTestRoutes from 'terra-arrange/tests/nightwatch/ArrangeTestRoutes';
 import AvatarTestRoutes from 'terra-avatar/tests/nightwatch/AvatarTestRoutes';
@@ -144,6 +146,7 @@ ReactDOM.render((
     <Redirect from="/" to="/site" />
     <Route path="/site" component={App}>
       <IndexRoute component={Home} />
+      <Route path="action-header" component={ActionHeaderExamples} />
       <Route path="alert" component={AlertExamples} />
       <Route path="avatar" component={AvatarExamples} />
       <Route path="arrange" component={ArrangeExamples} />
@@ -205,6 +208,7 @@ ReactDOM.render((
     </Route>
     <Route path="/tests" component={TestContainer}>
       <IndexRoute component={TestLinks} />
+      {ActionHeaderTestRoutes}
       {AlertTestRoutes}
       {ArrangeTestRoutes}
       {AvatarTestRoutes}

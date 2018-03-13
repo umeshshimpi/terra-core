@@ -139,6 +139,7 @@ class App extends React.Component {
     const panelContent = (
       <ContentContainer header={navHeader} className={styles['site-panel']} fill>
         <List className={styles['site-nav']}>
+          <List.Item content={<Link onClick={this.handleResetScroll} to="/site/action-header">Action Header</Link>} />
           <List.Item content={<Link onClick={this.handleResetScroll} to="/site/alert">Alert</Link>} />
           <List.Item content={<Link onClick={this.handleResetScroll} to="/site/arrange">Arrange</Link>} />
           <List.Item content={<Link onClick={this.handleResetScroll} to="/site/avatar">Avatar</Link>} />
