@@ -1,14 +1,15 @@
 :local {
   .flex-header {
-    background-color: #f4f4f4;
-    border-bottom-color: #dedfe0;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    background-color: var(--terra-action-header-background-color, #fff);
+    border-bottom: var(--terra-action-header-border-bottom, 1px solid #1c1f21);
+    border-left: var(--terra-action-header-border-left, 1px solid #1c1f21);
+    border-right: var(--terra-action-header-border-right, 1px solid #1c1f21);
+    border-top: var(--terra-action-header-border-top, 1px solid #1c1f21);
     display: flex;
-    height: 3.587rem;
+    height: 4rem;
     justify-content: space-between;
     overflow: hidden;
-    padding: 0.714rem;
+    padding: 1.429rem 0.714rem 1.357rem;
     position: relative;
     width: 100%;
   }
@@ -48,10 +49,12 @@
   }
 
   .title {
-    font-size: 1.285rem;
+    color: var(--terra-action-header-font-color, #1c1f21);
+    font-family: var(--terra-action-header-font-family);
+    font-size: var(--terra-action-header-font-size, 1rem);
     font-weight: normal;
     height: 100%;
-    line-height: 1.75;
+    line-height: 1.214rem;
     margin-bottom: 0;
     margin-top: 0;
     overflow: hidden;

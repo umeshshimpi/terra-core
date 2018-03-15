@@ -24,7 +24,7 @@ const propTypes = {
    */
   title: PropTypes.string,
   /**
-   * Sets the heading level. One of 1, 2, 3, 4, 5, or 6.
+   * Sets the heading level. One of h1, h2, h3, h4, h5, or h6.
    */
   level: PropTypes.oneOf(VALID_LEVELS),
   /**
@@ -111,13 +111,13 @@ const ActionHeader = ({
   const previousText = intl.formatMessage({ id: 'Terra.Clinical.ActionHeader.previous' });
   const nextText = intl.formatMessage({ id: 'Terra.Clinical.ActionHeader.next' });
 
-  const closeButton = onClose ? <Button isIconOnly icon={<IconClose />} text={closeText} onClick={onClose} /> : null;
-  const backButton = onBack ? <Button isIconOnly icon={<IconLeft />} text={backText} onClick={onBack} /> : null;
+  const closeButton = onClose ? <Button variant="utility" isIconOnly icon={<IconClose />} text={closeText} onClick={onClose} /> : null;
+  const backButton = onBack ? <Button variant="utility" isIconOnly icon={<IconLeft />} text={backText} onClick={onBack} /> : null;
 
   let closeButtonSmall;
   let backButtonSmall;
   if (onClose && !onBack && !keepCloseButton) {
-    backButtonSmall = <Button isIconOnly icon={<IconLeft />} text={backText} onClick={onClose} />;
+    backButtonSmall = <Button variant="utility" isIconOnly icon={<IconLeft />} text={backText} onClick={onClose} />;
     closeButtonSmall = null;
   } else {
     closeButtonSmall = closeButton;
@@ -127,9 +127,9 @@ const ActionHeader = ({
   let expandButton;
   if (!backButton) {
     if (onMaximize) {
-      expandButton = <Button isIconOnly icon={<IconMaximize />} text={maximizeText} onClick={onMaximize} />;
+      expandButton = <Button variant="utility" isIconOnly icon={<IconMaximize />} text={maximizeText} onClick={onMaximize} />;
     } else if (onMinimize) {
-      expandButton = <Button isIconOnly icon={<IconMinimize />} text={minimizeText} onClick={onMinimize} />;
+      expandButton = <Button variant="utility" isIconOnly icon={<IconMinimize />} text={minimizeText} onClick={onMinimize} />;
     }
   }
 

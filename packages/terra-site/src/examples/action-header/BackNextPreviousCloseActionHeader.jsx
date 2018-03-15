@@ -1,6 +1,6 @@
 /* eslint-disable no-alert */
 import React from 'react';
-import ActionHeader from 'terra-action-header';
+import ActionHeader from '../../../../terra-action-header'; // TODO: Resolve path
 
 const ActionHeaderExample = () => (
   <div>
@@ -9,8 +9,6 @@ const ActionHeaderExample = () => (
       title="Action Header"
       onClose={() => alert('You clicked close!')}
       onBack={() => alert('You clicked back!')}
-      onNext={() => alert('You clicked next!')}
-      onPrevious={() => alert('You clicked previous!')}
     />
     <br />
   </div>

@@ -14,9 +14,7 @@ const ActionHeaderExample = () => (
   <div>
     <br />
     <ActionHeader
-      title="Action Header"
-      onClose={() => alert('You clicked close!')}
-      onMinimize={() => alert('You clicked minimize!')}
+      title="Action Header Action Header Action Header Action Header Action Header Action Header"
     >
       <CollapsibleMenuView>
         <CollapsibleMenuView.Toggle

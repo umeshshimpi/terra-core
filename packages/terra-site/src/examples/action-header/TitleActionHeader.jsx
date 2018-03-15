@@ -7,11 +7,10 @@ const ActionHeaderExample = () => (
     <br />
     <ActionHeader
       title="Action Header"
-      onClose={() => alert('You clicked close!')}
-      keepCloseButton
     />
     <br />
   </div>
 );
 
 export default ActionHeaderExample;
+/* eslint-enable no-alert */
