@@ -6,12 +6,13 @@ const ActionHeaderExample = () => (
   <div>
     <br />
     <ActionHeader
-      title="Action Header"
+      title="Back Close Action Header"
       onClose={() => alert('You clicked close!')}
-      onMaximize={() => alert('You clicked expand!')}
+      onBack={() => alert('You clicked back!')}
     />
     <br />
   </div>
 );
 
 export default ActionHeaderExample;
+/* eslint-enable no-alert */

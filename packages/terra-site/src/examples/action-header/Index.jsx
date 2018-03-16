@@ -10,13 +10,10 @@ import { version } from 'terra-action-header/package.json';
 import ActionHeaderSrc from '!raw-loader!terra-action-header/src/ActionHeader';
 
 // Example Files
-import TitleActionHeader from './TitleActionHeader';
-import TitleBackActionHeader from './TitleBackActionHeader';
-import TitleBackCollapsibleMenuActionHeader from './TitleBackCollapsibleMenuActionHeader';
-import BackNextPreviousCloseActionHeader from './BackNextPreviousCloseActionHeader';
+import DefaultActionHeader from './DefaultActionHeader';
+import BackActionHeader from './BackActionHeader';
+import BackCloseActionHeader from './BackCloseActionHeader';
 import KeepCloseActionHeader from './KeepCloseActionHeader';
-import MaximizeCloseActionHeader from './MaximizeCloseActionHeader';
-import MinimizeCustomCloseActionHeader from './MinimizeCustomCloseActionHeader';
 
 const ActionHeaderExamples = () => (
   <div>
@@ -24,13 +21,10 @@ const ActionHeaderExamples = () => (
     <Markdown id="readme" src={ReadMe} />
     <PropsTable id="props" src={ActionHeaderSrc} />
     <h2>Examples</h2>
-    <TitleActionHeader />
-    <TitleBackActionHeader />
-    <TitleBackCollapsibleMenuActionHeader />
-    <BackNextPreviousCloseActionHeader />
+    <DefaultActionHeader />
+    <BackActionHeader />
     <KeepCloseActionHeader />
-    <MaximizeCloseActionHeader />
-    <MinimizeCustomCloseActionHeader />
+    <BackCloseActionHeader />
   </div>
 );
 

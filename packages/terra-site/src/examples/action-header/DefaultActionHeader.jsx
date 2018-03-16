@@ -6,7 +6,7 @@ const ActionHeaderExample = () => (
   <div>
     <br />
     <ActionHeader
-      title="Action Header"
+      title="Default Action Header"
     />
     <br />
   </div>
