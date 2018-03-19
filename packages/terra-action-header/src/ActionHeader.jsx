@@ -104,12 +104,13 @@ const ActionHeader = ({
   intl,
 }) => {
   const attributes = Object.assign({}, customProps);
-  const backText = intl.formatMessage({ id: 'Terra.actionHeader.back' });
-  const closeText = intl.formatMessage({ id: 'Terra.actionHeader.close' });
-  const minimizeText = intl.formatMessage({ id: 'Terra.actionHeader.minimize' });
-  const maximizeText = intl.formatMessage({ id: 'Terra.actionHeader.maximize' });
-  const previousText = intl.formatMessage({ id: 'Terra.actionHeader.previous' });
-  const nextText = intl.formatMessage({ id: 'Terra.actionHeader.next' });
+  // TODO: figure out intl
+  const backText = 'test';
+  const closeText = 'test';
+  const minimizeText = 'test';
+  const maximizeText = 'test';
+  const previousText = 'test';
+  const nextText = 'test';
 
   const closeButton = onClose ? <Button variant="utility" isIconOnly icon={<IconClose />} text={closeText} onClick={onClose} /> : null;
   const backButton = onBack ? <Button variant="utility" isIconOnly icon={<IconLeft />} text={backText} onClick={onBack} /> : null;

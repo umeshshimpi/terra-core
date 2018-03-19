@@ -63,7 +63,7 @@ import ToggleButtonExamples from './examples/toggle-button/Index';
 
 // Test Routes
 /* eslint-disable import/first, import/no-extraneous-dependencies */
-import ActionHeaderTestRoutes from 'terra-action-header/tests/nightwatch/ActionHeaderTestRoutes';
+import ActionHeaderTestRoutes from 'terra-action-header/examples/test-examples/ActionHeaderTestRoutes';
 import AlertTestRoutes from 'terra-alert/tests/nightwatch/AlertTestRoutes';
 import ArrangeTestRoutes from 'terra-arrange/tests/nightwatch/ArrangeTestRoutes';
 import AvatarTestRoutes from 'terra-avatar/tests/nightwatch/AvatarTestRoutes';
