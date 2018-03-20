@@ -27,4 +27,9 @@ describe('ActionHeader', () => {
     const actionHeader = render(<ActionHeader onBack={() => {}} onClose={() => {}} title="Action Header" />);
     expect(actionHeader).toMatchSnapshot();
   });
+
+  it('should render an action header with level three header element and title', () => {
+    const actionHeader = render(<ActionHeader level={3} title="Action Header" />);
+    expect(actionHeader).toMatchSnapshot();
+  });
 });

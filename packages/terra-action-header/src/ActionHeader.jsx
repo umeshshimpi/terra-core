@@ -16,17 +16,15 @@ import styles from './ActionHeader.scss';
 
 const cx = classNames.bind(styles);
 
-const VALID_LEVELS = [1, 2, 3, 4, 5, 6];
-
 const propTypes = {
   /**
-   * Text to be displayed as the title in the header bar
+   * Text to be displayed as the title in the header bar.
    */
   title: PropTypes.string,
   /**
-   * Sets the heading level. One of h1, h2, h3, h4, h5, or h6.
+   * Optionally sets the heading level. One of `1`, `2`, `3`, `4`, `5`, `6`. Default `level=1`.
    */
-  level: PropTypes.oneOf(VALID_LEVELS),
+  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]),
   /**
    * Callback function for when the close button is clicked. The back button will not display if this is not set.
    * On small viewports a back button will be displayed instead of a close button when a separate onBack callback is not set.
@@ -69,7 +67,7 @@ const propTypes = {
 
 const defaultProps = {
   title: '',
-  level: 2,
+  level: 1,
   onClose: null,
   onBack: null,
   onMaximize: null,
@@ -177,6 +175,7 @@ const ActionHeader = ({
       startContent={leftButtonsDefault}
       title={title}
       endContent={rightButtonsDefault}
+      level={level}
     >
       {children}
     </ActionHeaderContainer>
@@ -188,6 +187,7 @@ const ActionHeader = ({
       startContent={leftButtonsSmall}
       title={title}
       endContent={rightButtonsSmall}
+      level={level}
     >
       {children}
     </ActionHeaderContainer>

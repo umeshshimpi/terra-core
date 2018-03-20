@@ -14,20 +14,24 @@ const propTypes = {
   children: PropTypes.element,
 
   /**
-   * Content to be displayed at the start of the header, placed before the title
+   * Content to be displayed at the start of the header, placed before the title.
    */
   startContent: PropTypes.element,
 
   /**
-   * Text to be displayed as the title in the header bar
+   * Text to be displayed as the title in the header bar.
    */
   title: PropTypes.string,
 
   /**
-   * Content to be displayed at the end of the header
+   * Content to be displayed at the end of the header.
    * The element passed as endContent will be wrapped in a div with flex attributes.
    */
   endContent: PropTypes.element,
+  /**
+   * Sets the heading level. One of `1`, `2`, `3`, `4`, `5`, `6`.
+   */
+  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
 };
 
 const defaultProps = {
@@ -36,19 +40,21 @@ const defaultProps = {
   endContent: null,
 };
 
-const ActionHeaderContainer = ({ children, title, startContent, endContent, ...customProps }) => {
+const ActionHeaderContainer = ({ children, title, startContent, endContent, level, ...customProps }) => {
   let startElement;
   if (startContent) {
     startElement = <div className={cx('flex-end')}>{startContent}</div>;
   }
 
+  const HeaderElement = `h${level}`;
+
   let titleElement;
   if (title) {
     titleElement = (
       <div className={cx('title-container')}>
-        <h1 className={cx('title')}>
+        <HeaderElement className={cx('title')}>
           {title}
-        </h1>
+        </HeaderElement>
       </div>
     );
   }
