@@ -7,6 +7,18 @@ describe('ActionHeader', () => {
 
     Terra.should.beAccessible({ viewports });
     Terra.should.matchScreenshot({ viewports });
+    Terra.should.themeEachCustomProperty(
+      {
+        '--terra-action-header-background-color': '#551A8B',
+        '--terra-action-header-border-bottom': '1px solid #00FF00',
+        '--terra-action-header-border-left': '1px solid #00FF00',
+        '--terra-action-header-border-right': '1px solid #00FF00',
+        '--terra-action-header-border-top': '1px solid #00FF00',
+        '--terra-action-header-font-color': '#4682B4',
+        '--terra-action-header-font-family': 'Roboto',
+        '--terra-action-header-font-size': '0.5rem',
+      },
+    );
   });
 
   describe('Back', () => {
@@ -14,6 +26,18 @@ describe('ActionHeader', () => {
 
     Terra.should.beAccessible({ viewports });
     Terra.should.matchScreenshot({ viewports });
+    Terra.should.themeEachCustomProperty(
+      {
+        '--terra-action-header-background-color': '#551A8B',
+        '--terra-action-header-border-bottom': '1px solid #00FF00',
+        '--terra-action-header-border-left': '1px solid #00FF00',
+        '--terra-action-header-border-right': '1px solid #00FF00',
+        '--terra-action-header-border-top': '1px solid #00FF00',
+        '--terra-action-header-font-color': '#4682B4',
+        '--terra-action-header-font-family': 'Roboto',
+        '--terra-action-header-font-size': '0.5rem',
+      },
+    );
   });
 
   describe('Back Close', () => {
@@ -21,6 +45,18 @@ describe('ActionHeader', () => {
 
     Terra.should.beAccessible({ viewports });
     Terra.should.matchScreenshot({ viewports });
+    Terra.should.themeEachCustomProperty(
+      {
+        '--terra-action-header-background-color': '#551A8B',
+        '--terra-action-header-border-bottom': '1px solid #00FF00',
+        '--terra-action-header-border-left': '1px solid #00FF00',
+        '--terra-action-header-border-right': '1px solid #00FF00',
+        '--terra-action-header-border-top': '1px solid #00FF00',
+        '--terra-action-header-font-color': '#4682B4',
+        '--terra-action-header-font-family': 'Roboto',
+        '--terra-action-header-font-size': '0.5rem',
+      },
+    );
   });
 
   describe('Keep Closed', () => {
@@ -28,5 +64,17 @@ describe('ActionHeader', () => {
 
     Terra.should.beAccessible({ viewports });
     Terra.should.matchScreenshot({ viewports });
+    Terra.should.themeEachCustomProperty(
+      {
+        '--terra-action-header-background-color': '#551A8B',
+        '--terra-action-header-border-bottom': '1px solid #00FF00',
+        '--terra-action-header-border-left': '1px solid #00FF00',
+        '--terra-action-header-border-right': '1px solid #00FF00',
+        '--terra-action-header-border-top': '1px solid #00FF00',
+        '--terra-action-header-font-color': '#4682B4',
+        '--terra-action-header-font-family': 'Roboto',
+        '--terra-action-header-font-size': '0.5rem',
+      },
+    );
   });
 });

@@ -80,14 +80,14 @@ const defaultProps = {
   children: null,
 };
 
-const contextTypes = {
-  /* eslint-disable consistent-return */
-  intl: (context) => {
-    if (context.intl === undefined) {
-      return new Error('Please add locale prop to Base component to load translations');
-    }
-  },
-};
+// const contextTypes = {
+//   /* eslint-disable consistent-return */
+//   intl: (context) => {
+//     if (context.intl === undefined) {
+//       return new Error('Please add locale prop to Base component to load translations');
+//     }
+//   },
+// };
 
 const ActionHeader = ({
   title,
@@ -206,6 +206,6 @@ const ActionHeader = ({
 
 ActionHeader.propTypes = propTypes;
 ActionHeader.defaultProps = defaultProps;
-ActionHeader.contextTypes = contextTypes;
+// ActionHeader.contextTypes = contextTypes;
 
 export default ActionHeader;

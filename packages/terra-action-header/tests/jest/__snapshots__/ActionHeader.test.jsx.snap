@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ActionHeader should render a default component 1`] = `
-<div
-  className="action-header"
->
-  default
-</div>
-`;
+exports[`ActionHeader should render a default action header 1`] = `<div />`;
+
+exports[`ActionHeader should render an action header with back and close buttons and title 1`] = `<div />`;
+
+exports[`ActionHeader should render an action header with back button and title 1`] = `<div />`;
+
+exports[`ActionHeader should render an action header with close button and title 1`] = `<div />`;
+
+exports[`ActionHeader should render an action header with title 1`] = `<div />`;
