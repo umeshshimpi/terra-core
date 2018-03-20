@@ -174,7 +174,6 @@ const ActionHeader = ({
   const actionHeader = (
     <ActionHeaderContainer
       {...attributes}
-      data-terra-clincial-action-header
       startContent={leftButtonsDefault}
       title={title}
       endContent={rightButtonsDefault}
@@ -186,7 +185,6 @@ const ActionHeader = ({
   const smallActionHeader = (
     <ActionHeaderContainer
       {...attributes}
-      data-terra-clincial-action-header
       startContent={leftButtonsSmall}
       title={title}
       endContent={rightButtonsSmall}

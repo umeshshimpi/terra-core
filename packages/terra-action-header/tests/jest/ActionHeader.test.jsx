@@ -27,15 +27,4 @@ describe('ActionHeader', () => {
     const actionHeader = render(<ActionHeader onBack={() => {}} onClose={() => {}} title="Action Header" />);
     expect(actionHeader).toMatchSnapshot();
   });
-  // // Prop Tests
-  // it('should use the default value when no value is given', () => {
-  //   const wrapper = shallow(defaultRender);
-  //   expect(wrapper.find('.action-header').text()).toEqual('default');
-  // });
-  //
-  // // Structure Tests
-  // it('should have the class action-header', () => {
-  //   const wrapper = shallow(defaultRender);
-  //   expect(wrapper.prop('className')).toContain('action-header');
-  // });
 });

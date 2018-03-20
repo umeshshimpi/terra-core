@@ -28,21 +28,15 @@ const propTypes = {
    * The element passed as endContent will be wrapped in a div with flex attributes.
    */
   endContent: PropTypes.element,
-
-  /**
-   * A Boolean indicating if element is a subheader.
-   */
-  isSubheader: PropTypes.bool,
 };
 
 const defaultProps = {
   title: '',
   startContent: null,
   endContent: null,
-  isSubheader: false,
 };
 
-const ActionHeaderContainer = ({ children, title, startContent, endContent, isSubheader, ...customProps }) => {
+const ActionHeaderContainer = ({ children, title, startContent, endContent, ...customProps }) => {
   let startElement;
   if (startContent) {
     startElement = <div className={cx('flex-end')}>{startContent}</div>;
@@ -73,10 +67,8 @@ const ActionHeaderContainer = ({ children, title, startContent, endContent, isSu
     childElement = React.cloneElement(children, { className: childClassNames });
   }
 
-  const headerClass = isSubheader ? 'flex-subheader' : 'flex-header';
-
   return (
-    <header {...customProps} className={cx(headerClass, customProps.className)}>
+    <header {...customProps} className={cx('flex-header', customProps.className)}>
       {startElement}
       <div className={cx('flex-fill')}>
         {titleElement}
