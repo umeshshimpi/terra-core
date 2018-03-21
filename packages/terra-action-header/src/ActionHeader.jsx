@@ -48,14 +48,14 @@ const defaultProps = {
   children: null,
 };
 
-// const contextTypes = {
-//   /* eslint-disable consistent-return */
-//   intl: (context) => {
-//     if (context.intl === undefined) {
-//       return new Error('Please add locale prop to Base component to load translations');
-//     }
-//   },
-// };
+const contextTypes = {
+  /* eslint-disable consistent-return */
+  intl: (context) => {
+    if (context.intl === undefined) {
+      return new Error('Please add locale prop to Base component to load translations');
+    }
+  },
+};
 
 const ActionHeader = ({
   title,
@@ -68,9 +68,8 @@ const ActionHeader = ({
   intl,
 }) => {
   const attributes = Object.assign({}, customProps);
-  // TODO: figure out intl
-  const backText = 'test';
-  const closeText = 'test';
+  const backText = intl.formatMessage({ id: 'Terra.actionHeader.back' });
+  const closeText = intl.formatMessage({ id: 'Terra.actionHeader.close' });
 
   const closeButton = onClose ? <Button variant="utility" isIconOnly icon={<IconClose />} text={closeText} onClick={onClose} /> : null;
   const backButton = onBack ? <Button variant="utility" isIconOnly icon={<IconLeft />} text={backText} onClick={onBack} /> : null;
@@ -144,6 +143,6 @@ const ActionHeader = ({
 
 ActionHeader.propTypes = propTypes;
 ActionHeader.defaultProps = defaultProps;
-// ActionHeader.contextTypes = contextTypes;
+ActionHeader.contextTypes = contextTypes;
 
 export default ActionHeader;
