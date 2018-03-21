@@ -1,5 +1,6 @@
 /* eslint-disable no-alert, import/no-extraneous-dependencies */
 import React from 'react';
+import Button from 'terra-button';
 import { IntlProvider } from 'react-intl';
 import ActionHeader from '../../lib/ActionHeader';
 
@@ -9,6 +10,10 @@ const locale = 'en-US';
 
 export default () => (
   <IntlProvider locale={locale} messages={messages}>
-    <ActionHeader title="Back Action Header" onBack={() => alert('You clicked back!')} />
+    <ActionHeader title="Custom Button Action Header" >
+      <div>
+        <Button text="Custom Button" onClick={() => alert('You clicked me!')} />
+      </div>
+    </ActionHeader>
   </IntlProvider>
 );

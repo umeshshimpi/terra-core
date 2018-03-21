@@ -8,6 +8,7 @@ import DefaultActionHeader from './DefaultActionHeader';
 import BackActionHeader from './BackActionHeader';
 import BackCloseActionHeader from './BackCloseActionHeader';
 import KeepCloseActionHeader from './KeepCloseActionHeader';
+import CustomButtonActionHeader from './CustomButtonActionHeader';
 
 const routes = (
   <div>
@@ -16,6 +17,7 @@ const routes = (
     <Route path="/tests/action-header-tests/back-action-header" component={BackActionHeader} />
     <Route path="/tests/action-header-tests/back-close-action-header" component={BackCloseActionHeader} />
     <Route path="/tests/action-header-tests/keep-close-action-header" component={KeepCloseActionHeader} />
+    <Route path="/tests/action-header-tests/custom-button-action-header" component={CustomButtonActionHeader} />
   </div>
 );
 
