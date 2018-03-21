@@ -6,10 +6,10 @@
     border-right: var(--terra-action-header-border-right, 1px solid #1c1f21);
     border-top: var(--terra-action-header-border-top, 1px solid #1c1f21);
     display: flex;
-    height: 4rem;
+    height: var(--terra-action-header-height, 4rem);
     justify-content: space-between;
     overflow: hidden;
-    padding: 1.429rem 0.714rem 1.357rem;
+    padding: var(--terra-action-header-padding, 1.429rem 0.714rem 1.357rem);
     position: relative;
     width: 100%;
   }

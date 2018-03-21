@@ -14,6 +14,7 @@ import DefaultActionHeader from './DefaultActionHeader';
 import BackActionHeader from './BackActionHeader';
 import BackCloseActionHeader from './BackCloseActionHeader';
 import KeepCloseActionHeader from './KeepCloseActionHeader';
+import CustomButtonActionHeader from './CustomButtonActionHeader';
 
 const ActionHeaderExamples = () => (
   <div>
@@ -25,6 +26,7 @@ const ActionHeaderExamples = () => (
     <BackActionHeader />
     <KeepCloseActionHeader />
     <BackCloseActionHeader />
+    <CustomButtonActionHeader />
   </div>
 );
 
