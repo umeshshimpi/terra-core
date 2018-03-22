@@ -5,11 +5,10 @@
     border-left: var(--terra-action-header-border-left, 1px solid #1c1f21);
     border-right: var(--terra-action-header-border-right, 1px solid #1c1f21);
     border-top: var(--terra-action-header-border-top, 1px solid #1c1f21);
+    box-shadow: var(--terra-action-header-box-shadow);
     display: flex;
-    height: var(--terra-action-header-height, 4rem);
     justify-content: space-between;
-    overflow: hidden;
-    padding: var(--terra-action-header-padding, 1.429rem 0.714rem 1.357rem);
+    padding: var(--terra-action-header-padding, 0.714rem);
     position: relative;
     width: 100%;
   }
@@ -43,7 +42,7 @@
   .title-container {
     height: 100%;
     left: 0;
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
   }
@@ -54,12 +53,8 @@
     font-size: var(--terra-action-header-font-size, 1rem);
     font-weight: normal;
     height: 100%;
-    line-height: 1.214rem;
     margin-bottom: 0;
     margin-top: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     width: 100%;
     word-break: normal;
     word-wrap: normal;
